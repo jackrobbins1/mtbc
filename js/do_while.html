@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>for</title>
+
+
+    </head>
+    <body>
+        <script>
+            var items = [
+                'for',
+                'do...while',
+                'for...in',
+                'for...of',
+            ];
+
+            var msg = 'JavaScript supports ' + items.length + ' types of loops. ';
+            var i = 0;
+            var li = ' ';
+
+            do {
+                li += `<li>${items[i]}</li>`;
+                i++;
+            } while(i<items.length);
+
+            msg += `<ul>${li}</ul>`;
+
+            document.write(msg);
+        </script>
+
+    </body>
+
+
+</html>
